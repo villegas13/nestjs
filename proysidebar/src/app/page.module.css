@@ -1,0 +1,183 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: #333;
+}
+
+.h1 {
+ font-size: 1.4em;
+ padding: 2vw;
+ font-family: 'Roboto', sans-serif;
+}
+.span{
+  font-size: 1em;
+  margin: auto;
+  display: block;
+  width: 88%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.em {
+  font-style: normal;
+  padding: 1vw;
+}
+
+.a {
+  text-decoration: none;
+  color: inherit;
+} 
+
+
+.slayout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.slayout__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+
+.ssidebartrigger {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  background: #192b3c;
+}
+
+.ssidebartrigger > .i {
+  display: inline-block;
+  margin: 1.5em 0 0 1.5em;
+  color: #f07ab0;
+}
+
+.ssidebarnav {
+  position: fixed;
+  top: 0;
+  left: -15em;
+  overflow: hidden;
+  transition: all .3s ease-in;
+  width: 15em;
+  height: 100%;
+  background: #243e56;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ssidebarnav:hover,
+.ssidebarnav:focus,
+.ssidebartrigger:focus + .ssidebarnav,
+.ssidebartrigger:hover + .ssidebarnav {
+  left: 0;
+}
+
+.ssidebarnav .ul {
+  position: absolute;
+  top: 4em;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 15em;
+}
+
+.ssidebarnav .ul .li {
+  width: 100%;
+}
+
+.ssidebarnavlink {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 4em;
+  padding: 2vw;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ssidebarnavlink .em {
+  position: absolute;
+  top: 50%;
+  left: 4em;
+  transform: translateY(-50%);
+}
+
+.ssidebarnavlink:hover {
+  background: #4d6276;
+}
+
+.ssidebarnavlink > .i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+}
+
+.ssidebarnavlink > i::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media (min-width: 42em) {
+  .slayoutcontent {
+     margin-left: 4em;
+  }
+  
+  
+  .ssidebartrigger {
+     width: 4em;
+     padding-top: 5vw;
+  }
+  
+  .ssidebarnav {
+     width: 4em;
+     left: 0;
+  }
+  
+  .ssidebarnav:hover,
+  .ssidebarnav:focus,
+  .ssidebartrigger:hover + .ssidebarnav,
+  .ssidebartrigger:focus + .ssidebarnav {
+     width: 15em;
+  }
+}
+
+@media (min-width: 68em) {
+  .slayoutcontent {
+     margin-left: 15em;
+  }
+  
+  
+  .ssidebartrigger {
+     display: none;
+     padding-top: 5vw;
+     
+  }
+  
+  .ssidebarnav {
+     width: 15em;
+   
+  }
+  
+  .ssidebarnav ul {
+     top: 1.3em;
+  }
+}
+
+.titprinc{
+  text-align: center;
+  width: 85%;
+  padding: 1vw;
+}
